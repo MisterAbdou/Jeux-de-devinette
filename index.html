@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuestNumber</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <header>
+         <h1>Devinez Le Nombre Masqué !</h1>
+         <p class="between"></p>
+         <button class="quit">Quitter</button>
+         <button class="again">Rejouer</button>
+         <div class="number">?</div>
+         <div class="avis hidden">
+            <button class="fermer"></button>
+             <h2>Bienvenue dans le jeu de devinette!</h2>
+            <p class="resumer">La machine a choisi un nombre mystere.Vous avez un maximum de 5 tentatives pour le deviner. <br>
+            A chaque essai,vous saurez si votre nombre est trop Grand ,Petit ou Correct. <br>
+            Trouvez le bon  nombre avant d'épuiser vos chances. <br>
+            AMUSEZ VOUS BIEN 😊😉</p>
+            <input type="number" class="intervalle" placeholder=" Donner l'intervalle ici...">
+            <button class="valid">valider</button>
+         </div>
+         <div class="couverture hidden"></div>
+     </header>
+     <main>
+        <section class="left">
+            <input type="number" class="guess" placeholder="veuillez saisir votre nombre ici...">
+             <button class="btn checkt">Verifier!</button>
+        </section>
+        <section class="right">
+           <p class="message">Commencez à deviner...</p>
+           <p class="label-score">
+            💯 Score: <span class="score">5</span>
+           </p>
+           <p class="label-highscore"> 
+            💥Highscore: <span class="highscore">0</span></p>
+        </section>
+     </main>
+     <script src="script.js"></script>
+</body>
+</html>
